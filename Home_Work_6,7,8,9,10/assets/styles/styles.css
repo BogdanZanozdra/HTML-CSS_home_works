@@ -83,11 +83,9 @@ h1 {
     gap: 30px;
 }
 .offer-card {
-    /* width: 360px; */
     position: relative;
 }
 .offer-card-long {
-    /* width: 360px; */
     position: relative;
     grid-column: span 3;
 }
@@ -167,7 +165,7 @@ h1 {
     font-family: Lato;
     font-size: 14px;
     font-weight: 300;
-    line-height: normal;
+    line-height: pxnormal;
     margin: 0px;
 }
 .product-price {
@@ -195,6 +193,195 @@ h1 {
     /* width: 212px;
     height: 48px; */
 }
+.advantages-line {
+    height: 341px;
+    background-color: #222224;
+    display: flex;
+    text-align: center;
+    margin-top: 109px;
+}
+.advantages {
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+.advantages__item {
+    width: 360px;
+}
+.advantages__item__title{
+    color: #FBFBFB;
+    font-family: Lato;
+    font-size: 19.96px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 2px;
+    margin-top: 19px;
+}
+.advantages__item__description {
+    color: #FBFBFB;
+    text-align: center;
+    font-family: Lato;
+    font-size: 13.972px;
+    font-weight: 300;
+    line-height: normal;
+    padding: 0 30px;
+    margin-bottom: 0px;
+}
+.subscribe-background {
+    background: url("../img/photo_subscribe.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 448px;
+}
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 448px;
+    gap: 223px;
+}
+.subscribe_promo {
+    width: 359px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.subscribe_promo__desc {
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+}
+.desc-italic {
+    color: #222224;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;   
+    line-height: normal;
+}
+.subscribe_form__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.form__subtitle {
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 167.2%; /* 40.128px */
+    margin-bottom: 0px;
+}
+.form__info {
+    color: #222224;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 167.2%;
+    margin-top: 0px;
+}
+.email-form {
+    display: flex;
+
+}
+.form_input {
+    background-color: #E1E1E1;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 250px;
+    height: 49px;
+    padding-left: 22px;
+
+    color: #222224;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 0px;
+}
+.subscribe-button {
+    background-color: #E05C6E;
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 51px;
+    width: 100px;
+    margin-left: 0px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+.offer_image_wrapper {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+.offer_image_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 22, 22, 0.70);
+}
+.product_image_wrapper {
+    display: flex;
+    position: relative;
+}
+.product_image_wrapper:hover .product_image_bg {
+    position: absolute;
+    background: #3A3838DB;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.product_button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    color: #FFF;
+    border: 1px solid  white;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    gap: 11px;
+    background: none;
+    width: 139px;
+    height: 44px;
+    cursor: pointer;
+}
+.product_image_wrapper:hover .product_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
 @media screen and (max-width: 1439px)  {
     .center,
     .header,
@@ -247,6 +434,11 @@ h1 {
         max-width: 100%;
         height: 100%;
     }
+    
+    .offer_image_wrapper {
+        height: 100%;
+        width: 100%;
+    }
 
     .offer-card-long {
     text-align: center;
@@ -272,8 +464,10 @@ h1 {
    }
 
    .products-card-image {
-    max-width: 100%;
+    width: 100%;
     }
+
+
     .products-card-info {
         background-color: #F8F8F8;
     }
